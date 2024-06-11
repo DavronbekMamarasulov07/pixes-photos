@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixels</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    
+    <header id="header">
+       <div class="container">
+            <nav>
+                <h2>Pexels</h2>
+                <button>Login</button>
+            </nav>
+            <section id="hero">
+                <h2>The best free stock photos, royalty free images & videos shared by creators.</h2>
+                <form id="form">
+                    <div>
+                        <select id="select" required>
+                            <option value="photos">Photos</option>
+                            <option value="video">Video</option>
+                         </select>
+                        <input autocomplete="off" type="text"  id="search" placeholder="Search for free...">
+                    </div>
+                   <button type="submit">
+                        <i class="bi bi-search"></i>
+                   </button>
+                </form>
+            </section>
+       </div>
+    </header>
+    <div class="container">
+         <h2 class="img-title">Free Stock Photos</h2>
+         <div  id="img-grid">
+            <div id="first" class="img-grid-column"></div>
+            <div id="second" class="img-grid-column"></div>
+            <div id="third" class="img-grid-column"></div>
+         </div>
+         
+    </div>
+    
+
+    <script src="./assets/script/element.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="./assets/script/main.js"></script>
+</body>
+</html>
